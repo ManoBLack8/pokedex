@@ -1,0 +1,83 @@
+.App {
+  text-align: center;
+  background-color: #282c34;
+}
+
+.pokemon-container {
+  z-index: 99;
+}
+.pokemon-container p{
+  position: relative;
+  text-shadow: -1px 0 black, 0 1px black,
+      1px 0 black, 0 -1px black;
+  z-index: 99;
+}
+
+h2 {
+  position: relative;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  z-index: 99;
+}
+
+.App-logo {
+  position: absolute;
+  width: 400px;
+  top: 1%;
+  left: 39.5%;
+  transform: translate(-50%, -50%);
+  animation: spin 4s linear infinite;
+  z-index: 1;
+}
+.pokemonblao{
+  width: 150px;
+  position: relative;
+  z-index: 99;
+}
+
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+
+.App-link {
+  color: #61dafb;
+}
+
+.caixaTexto{
+  justify-content: end;
+}
+
+.Listapokemon.row {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.Listapokemon.row li {
+  margin: 5px;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
